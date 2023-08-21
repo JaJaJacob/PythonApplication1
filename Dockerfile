@@ -4,6 +4,8 @@ RUN apt-get update
 
 RUN apt-get install -y python
 
+RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
 RUN python get-pip.py
 
 RUN python -m pip install flask
