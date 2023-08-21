@@ -4,8 +4,6 @@ RUN apt-get update
 
 RUN apt-get install -y python
 
-RUN python -m ensurepip --upgrade
-
 RUN python get-pip.py
 
 RUN python -m pip install flask
