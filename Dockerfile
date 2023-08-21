@@ -2,6 +2,8 @@ FROM ubuntu:16.04
 
 RUN apt-get update
 
+RUN apt install curl
+
 RUN apt-get install -y python
 
 RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
