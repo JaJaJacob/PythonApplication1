@@ -4,6 +4,8 @@ RUN apt-get update
 
 RUN apt-get install -y python
 
+RUN python get pip.py
+
 RUN python -m pip install flask
 
 COPY app.py /opt/
